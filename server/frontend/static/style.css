@@ -135,6 +135,7 @@ img{
 
 .contacts {
     text-align: center;
-    font: 20px sans-serif;
+    font-family: sans-serif;
+    font-size: 2cqh;
     color: rgb(106, 172, 226);
 }
