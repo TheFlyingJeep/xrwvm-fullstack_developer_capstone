@@ -14,7 +14,7 @@ const Dealer = () => {
   const [dealer, setDealer] = useState({});
   const [reviews, setReviews] = useState([]);
   const [unreviewed, setUnreviewed] = useState(false);
-  const [postReview, setPostReview] = useState(<></>)
+  const [postReview, setPostReview] = useState(<></>);
 
   let curr_url = window.location.href;
   let root_url = curr_url.substring(0,curr_url.indexOf("dealer"));
@@ -31,10 +31,11 @@ const Dealer = () => {
     const retobj = await res.json();
     
     if(retobj.status === 200) {
-      let dealerobjs = Array.from(retobj.dealer)
-      setDealer(dealerobjs[0])
+      let dealerobjs = Array.from(retobj.dealer);
+      setDealer(dealerobjs[0]);
     }
   }
+  
 
   const get_reviews = async ()=>{
     const res = await fetch(reviews_url, {
@@ -44,7 +45,7 @@ const Dealer = () => {
     
     if(retobj.status === 200) {
       if(retobj.reviews.length > 0){
-        setReviews(retobj.reviews)
+        setReviews(retobj.reviews);
       } else {
         setUnreviewed(true);
       }
