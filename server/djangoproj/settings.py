@@ -28,9 +28,19 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', ('https://riley-8000.theiadockernext'
-                    '-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai')]
-CSRF_TRUSTED_ORIGINS = [('https://riley-8000.theiadockernext-1-labs-prod-'
+ALLOWED_HOSTS = [
+    'localhost', 
+    (
+        'https://riley-8000.theiadockernext'
+        '-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+    )
+]
+    ]
+
+
+        GINS = [('https://riley-8000.theiadockerne
+    x
+t-1-labs-prod-'
                             'theiak8s-4-tor01.proxy.cognitiveclass.ai')]
 
 REST_FRAMEWORK = {
