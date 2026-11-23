@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             name='CarMake',
             fields=[
                 (
-                    'id', 
+                    'id',
                     models.BigAutoField(
                         auto_created=True,
                         primary_key=True,
@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
             name='CarModel',
             fields=[
                 (
-                    'id', 
+                    'id',
                     models.BigAutoField(
                         auto_created=True,
                         primary_key=True,
@@ -43,7 +43,7 @@ class Migration(migrations.Migration):
                 ),
                 ('name', models.CharField(max_length=100)),
                 (
-                    'type', 
+                    'type',
                     models.CharField(
                         choices=[
                             ('SEDAN', 'Sedan'),
