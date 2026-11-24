@@ -1,1 +1,2 @@
-# coding-project-template
+# IBM Capstone Project
+Car dealership website
